@@ -1,0 +1,24 @@
+#include <stdio.h> 
+int main(int argc, char** argv) {
+int num;
+scanf("%i", &num);
+int prev = 1;
+int spaces = num - 1;
+for (int i = 1; i <= num; i++)
+
+{
+    for (int spa = 1; spa <= spaces; spa++)
+{
+    printf(" ");
+
+}
+for (int c = 1; c <= prev; c++)
+{
+    printf("*");
+}
+    printf("\n");
+    prev += 2;
+    spaces -= 1;
+}
+return 0;
+}
