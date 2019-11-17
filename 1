@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main (int argc, char** argv) {
+    int num;
+    scanf("%i", &num);
+    int count = 0;
+    int prev = num; 
+    while (1)
+  {
+        if (prev >= 1)
+            count ++;
+        else if (prev < 1) 
+            break;
+        prev /= 10;
+}
+
+printf("%d\n", count);
+return 0;
+
+}   
